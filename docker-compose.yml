@@ -7,8 +7,8 @@ services:
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: rootpass
-      MYSQL_USER: vin
-      MYSQL_PASSWORD: redhat
+      MYSQL_USER: vinu
+      MYSQL_PASSWORD: redhatvin
       MYSQL_DATABASE: mydb
 
   ownos:
@@ -20,8 +20,8 @@ services:
       - 8081:80
     environment:
       WORDPRESS_DB_HOST: dbos
-      WORDPRESS_DB_USER: vin
-      WORDPRESS_DB_PASSWORD: redhat
+      WORDPRESS_DB_USER: vinu
+      WORDPRESS_DB_PASSWORD: redhatvin
       WORDPRESS_DB_NAME: mydb
     volumes:
       - wp_storage_new:/var/www/html
