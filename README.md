@@ -7,7 +7,7 @@
 1. Pull the wordpress and mysql images from [Docker hub](https://hub.docker.com) :
 ```
     mysql:5.7
-    wordpress:5.1. I-php7.3-apache
+    wordpress:5.1.1-php7.3-apache
 ```    
 2. Create new volume to store the data permanantly.
       use command:
@@ -30,7 +30,7 @@
       -v wp_storage:/var/www/html
       -name wpos
       -- link dbos -p 8080:80
-      wordpress:5.1. I-php7.3-apache
+      wordpress:5.1.1-php7.3-apache
 ```
 5. Check the logs to see if everything is working fine   
 6. Configure IP
