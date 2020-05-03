@@ -11,7 +11,7 @@ services:
       MYSQL_PASSWORD: redhatvin
       MYSQL_DATABASE: mydb
 
-  ownos:
+  wordpressos:
     image: wordpress:5.1.1-php7.3-apache
     restart: always
     depends_on:
